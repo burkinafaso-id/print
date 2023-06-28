@@ -291,6 +291,7 @@ public class PrintServiceImpl implements PrintService {
                 }
                 setTemplateAttributes(decryptedJson.toString(), attributes);
                 attributes.put(IdType.UIN.toString(), uin);
+		attributes.put(IdType.RID.toString(), registrationId);
                 if (vid != null)
                     attributes.put(IdType.VID.toString(), vid);
                 else
